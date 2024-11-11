@@ -1,0 +1,232 @@
+/*
+.lato-thin {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lato-black {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.lato-thin-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.lato-light-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.lato-regular-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.lato-bold-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.lato-black-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+*/
+html {
+  scroll-behavior: smooth;
+  background-color: #fff8db;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-top: 150px; /* 根据导航栏的实际高度调整 */
+}
+
+@media screen and (max-width: 1600px) {
+  body {
+    padding-top: 100px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    padding-top: 80px;
+  }
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  position: fixed; /* 固定位置，使其不随页面滚动 */
+  top: 20px; /* 与视口顶部的距离 */
+  right: 20px; /* 与视口右侧的距离 */
+  z-index: 1200; /* 确保它在其他内容之上 */
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 2px;
+  margin: 5px auto;
+  background-color: #333;
+}
+
+@media screen and (max-width: 700px) {
+  .menu-toggle {
+    display: block; /* 在小屏幕显示汉堡菜单 */
+  }
+  .nav-list {
+    display: none; /* 默认隐藏导航列表 */
+    flex-direction: column; /* 列方向展示 */
+    width: 100%; /* 充满容器宽度 */
+    position: absolute;
+    top: 0px; /* 根据汉堡菜单的高度调整 */
+    left: 0px;
+    background-color: antiquewhite; /* 背景色，根据需要调整 */
+  }
+  .nav-li {
+    text-align: center; /* 文字居中显示 */
+    width: 100%; /* 单独占满一行 */
+  }
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: antiquewhite;
+  width: 100%;
+  z-index: 1000;
+}
+.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-evenly;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.nav-li {
+  float: left;
+  margin: auto;
+  padding: 2%;
+}
+.nav-li a {
+  color: black;
+  text-decoration: none;
+}
+.nav-li a:hover {
+  font-size: 120%;
+  font-weight: 900;
+  transition: font-size 0.2s ease;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 2%;
+}
+
+.titleContent {
+  font-size: 4.5rem;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* 不同视口字体优化 */
+@media screen and (max-width: 1600px) {
+  .titleContent {
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .titleContent {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 345px) {
+  .titleContent {
+    font-size: 1.5rem;
+  }
+}
+/* ===== */
+
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+.typingContainer {
+  padding-top: 1.5rem;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.typingText {
+  display: flex;
+  justify-content: center;
+}
+
+/* 文字动画 */
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#typingText {
+  animation-duration: 1s; /* 动画持续时间 */
+  animation-timing-function: ease-in-out; /* 动画速度函数 */
+}

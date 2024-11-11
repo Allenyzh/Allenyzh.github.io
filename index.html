@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Zhenhao Yang</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Nav bar -->
+    <nav>
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="nav-list">
+        <li class="nav-li"><a href="#title">About</a></li>
+        <li class="nav-li"><a href="#education">Education</a></li>
+        <li class="nav-li"><a href="#project">Project</a></li>
+        <li class="nav-li"><a href="#">Download My Resume</a></li>
+      </ul>
+    </nav>
+
+    <!-- Name -->
+    <div class="title" id="title">
+      <h2 class="titleContent">My Name is</h2>
+      <h1 class="titleContent">ZHENHAO YANG</h1>
+      <div class="typingContainer">
+        <div class="typingText">I am a</div>
+        <div class="typingText" id="typingText">Math Student</div>
+      </div>
+    </div>
+
+    <div id="education">
+      <h1 class="titleContent">Education</h1>
+      <div>
+        <ul>
+            <li>Shanghai Institute of Tourism</li>
+            <li>Concordia University</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="project">
+      <h1 class="titleContent">Project</h1>
+      <div>
+        <ul>
+            <li>React</li>
+            <li>CRUD TO DO list(FUll Stack)</li>
+            <li>Book Contact(Full Stack)</li>
+        </ul>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>&copy; <span id="spanYear"></span> ZHENHAO YANG</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

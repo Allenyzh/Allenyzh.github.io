@@ -140,10 +140,12 @@ nav {
   font-style: normal;
 }
 .nav-li {
+  font-size: 1.5rem;
   float: left;
   margin: auto;
   padding: 2%;
 }
+
 .nav-li a {
   color: black;
   text-decoration: none;
@@ -159,6 +161,11 @@ nav {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-style: normal;
+  padding: 2%;
+}
+
+.subTitle {
+  /* display: flex; */
   padding: 2%;
 }
 
@@ -196,7 +203,8 @@ nav {
 }
 
 .typingContainer {
-  padding-top: 1.5rem;
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
   font-size: 2rem;
   display: flex;
   flex-direction: column;
@@ -205,6 +213,10 @@ nav {
 .typingText {
   display: flex;
   justify-content: center;
+}
+
+#typingText1 {
+  font-weight: 800;
 }
 
 /* 文字动画 */
@@ -229,4 +241,51 @@ nav {
 #typingText {
   animation-duration: 1s; /* 动画持续时间 */
   animation-timing-function: ease-in-out; /* 动画速度函数 */
+}
+
+.edu-grid-container {
+  padding: 3%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.project-grid-container {
+  padding: 3%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.project-item {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 1rem;
+  width: 90%;
+}
+
+.edu-item {
+  font-size: 1.5rem;
+  text-align: center;
+}
+@media screen and (max-width: 700px) {
+  .edu-item {
+    font-size: 1rem;
+    padding: 1%;
+  }
+}
+@media screen and (max-width: 1700px) {
+  .project-grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 1200px) {
+  .project-grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 800px) {
+  .edu-grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .project-grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

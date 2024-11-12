@@ -73,6 +73,10 @@ body {
   padding-top: 150px; /* 根据导航栏的实际高度调整 */
 }
 
+.golden-font {
+  color: #86724a;
+}
+
 @media screen and (max-width: 1600px) {
   body {
     padding-top: 100px;

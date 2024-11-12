@@ -3,7 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/education.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/name.css" />
+    <link rel="stylesheet" href="./styles/navBar.css" />
+    <link rel="stylesheet" href="./styles/project.css" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png" />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
     <title>Zhenhao Yang</title>
     <script
       src="https://code.jquery.com/jquery-3.7.1.js"
@@ -29,20 +39,35 @@
         <li class="nav-li"><a href="#title">About</a></li>
         <li class="nav-li"><a href="#education">Education</a></li>
         <li class="nav-li"><a href="#project">Project</a></li>
-        <li class="nav-li"><a href="./Zhenhao_Yang_Resume.pdf" download="Zhenhao_Yang_Resume.pdf">Download My Resume</a></li>
+        <li class="nav-li">
+          <a href="./Zhenhao_Yang_Resume.pdf" download="Zhenhao_Yang_Resume.pdf"
+            >Download My Resume</a
+          >
+        </li>
       </ul>
     </nav>
 
-    <!-- Name -->
+    <!-- Name and photo -->
     <div class="title" id="title">
       <h2 class="titleContent">My Name is</h2>
       <h1 class="titleContent">ZHENHAO YANG</h1>
-      <div class="typingContainer">
-        <div class="typingText" id="typingText1">I am a</div>
-        <div class="typingText" id="typingText">Math Student</div>
+      <div class="nameContainer">
+        <div class="typingContainer">
+          <div class="typingText" id="typingText1">I am a</div>
+          <div class="typingText" id="typingText">Math Student</div>
+        </div>
+        <div class="myPhoto">
+          <img
+            src="/allen.jpg"
+            alt="Portrait of ZhenhaoYang"
+            id="allen"
+            width="500"
+          />
+        </div>
       </div>
     </div>
 
+    <!-- Education -->
     <div id="education">
       <h1 class="subTitle">Education</h1>
       <div class="edu-grid-container">
@@ -51,6 +76,7 @@
       </div>
     </div>
 
+    <!-- Project -->
     <div id="project">
       <h1 class="subTitle">Project</h1>
       <div class="project-grid-container">
@@ -62,6 +88,7 @@
       </div>
     </div>
 
+    <!-- Footer -->
     <footer class="footer">
       <p>&copy; <span id="spanYear"></span> ZHENHAO YANG</p>
     </footer>

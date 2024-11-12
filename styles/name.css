@@ -1,0 +1,120 @@
+.title {
+  display: flex;
+  flex-direction: column;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 2%;
+}
+.titleContent {
+  font-size: 4.5rem;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.typingContainer {
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.typingText {
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+}
+
+#typingText1 {
+  font-weight: 800;
+}
+
+#typingText {
+  animation-duration: 1s; /* 动画持续时间 */
+  animation-timing-function: ease-in-out; /* 动画速度函数 */
+}
+
+/* 文字动画 */
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.nameContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  padding: 2%;
+}
+
+#allen {
+  border-radius: 20px;
+}
+
+/* 不同视口字体优化 */
+@media screen and (max-width: 1600px) {
+  .titleContent {
+    font-size: 3.5rem;
+  }
+  #allen {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .titleContent {
+    font-size: 2.5rem;
+  }
+  #allen {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .typingText {
+    font-size: 2rem;
+  }
+  #allen {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .typingText {
+    font-size: 1.5rem;
+  }
+  #allen {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .typingText {
+    font-size: 0.9rem;
+  }
+  #allen {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .titleContent {
+    font-size: 1.9rem;
+  }
+}
+/* ===== */

@@ -1,0 +1,99 @@
+/*
+.lato-thin {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lato-black {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.lato-thin-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.lato-light-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.lato-regular-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.lato-bold-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.lato-black-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+*/
+html {
+  scroll-behavior: smooth;
+  background-color: #0b0b0b;
+  color: aliceblue;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-top: 150px; /* 根据导航栏的实际高度调整 */
+}
+
+@media screen and (max-width: 1600px) {
+  body {
+    padding-top: 100px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    padding-top: 80px;
+  }
+}
+
+/* For all subtitle education project etc. */
+.subTitle {
+  /* display: flex; */
+  font-size: 3.5rem;
+  padding: 2%;
+}
+
+@media screen and (max-width: 800px) {
+  .subTitle {
+    font-size: 1.5rem;
+  }
+}

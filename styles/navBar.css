@@ -1,0 +1,74 @@
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  position: fixed; /* 固定位置，使其不随页面滚动 */
+  top: 20px; /* 与视口顶部的距离 */
+  right: 20px; /* 与视口右侧的距离 */
+  z-index: 1200; /* 确保它在其他内容之上 */
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 2px;
+  margin: 5px auto;
+  background-color: aliceblue;
+  z-index: 1000;
+}
+
+.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.nav-li {
+  font-size: 1.5rem;
+  float: left;
+  margin: 1%;
+  padding: 0.5%;
+}
+
+@media screen and (max-width: 800px) {
+  .menu-toggle {
+    display: block;
+  }
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: aliceblue; /* 背景色 */
+  }
+  .nav-li {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: aliceblue;
+  width: 100%;
+  z-index: 99;
+}
+
+.nav-li a {
+  color: black;
+  text-decoration: none;
+}
+.nav-li a:hover {
+  font-size: 120%;
+  font-weight: 900;
+  transition: font-size 0.2s ease;
+}

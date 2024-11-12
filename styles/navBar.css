@@ -46,13 +46,20 @@
     position: absolute;
     top: 0px;
     left: 0px;
-    padding-top: 20%;
+    padding-top: 10%;
     padding-bottom: 5%;
     background: rgba(240, 248, 255, 0.9); 
   }
   .nav-li {
     text-align: center;
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .nav-list{
+    padding-top: 20%;
+    padding-bottom: 5%;
   }
 }
 

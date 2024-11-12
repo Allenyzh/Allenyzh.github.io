@@ -46,7 +46,9 @@
     position: absolute;
     top: 0px;
     left: 0px;
-    background: rgba(240, 248, 255, 0.8); 
+    padding-top: 20%;
+    padding-bottom: 5%;
+    background: rgba(240, 248, 255, 0.9); 
   }
   .nav-li {
     text-align: center;

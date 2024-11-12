@@ -15,6 +15,7 @@ $(document).ready(function () {
     $(".nav-list").toggle();
   });
 
+  // 汉堡菜单颜色变化
   $("#mobile-menu").click(function colorSwitch() {
     if ($(".nav-list").is(":visible") && $(window).width() <= 800) {
       $(".bar").css("background-color", "#242424");
@@ -23,18 +24,24 @@ $(document).ready(function () {
     }
   });
 
-  $(window).on("wheel", function (event) {
+  // 鼠标滚轮时间监听
+//   $(window).on("wheel", function (event) {
+//     if (event.originalEvent.deltaY !== 0 && $(window).width() <= 800) {
+//       barColorWhite();
+//     }
+//   });
+
+  // 手机滚动事件监听
+  $(window).scroll(function (event) {
     if (event.originalEvent.deltaY !== 0 && $(window).width() <= 800) {
-      $(".nav-list").hide();
-      $(".bar").css("background-color", "aliceblue");
+      barColorWhite();
     }
   });
 
   // 点击导航链接时隐藏导航列表
   $(".nav-list a").click(() => {
     if ($(".nav-list").is(":visible") && $(window).width() <= 800) {
-      $(".nav-list").hide();
-      $(".bar").css("background-color", "aliceblue");
+      barColorWhite();
     }
   });
 
@@ -51,6 +58,11 @@ $(document).ready(function () {
   // 初始化 textReplace 功能
   textReplace();
 });
+
+function barColorWhite() {
+  $(".nav-list").hide();
+  $(".bar").css("background-color", "aliceblue");
+}
 
 let myArray = ["Full Stack Developer", "Passionate Learner", "Math Student"];
 function textReplace() {

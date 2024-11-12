@@ -46,7 +46,7 @@
     position: absolute;
     top: 0px;
     left: 0px;
-    background-color: aliceblue; /* 背景色 */
+    background: rgba(240, 248, 255, 0.8); 
   }
   .nav-li {
     text-align: center;
@@ -58,7 +58,8 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: aliceblue;
+  background: rgba(240, 248, 255, 0.7); /* 设置半透明白色背景 */
+  backdrop-filter: blur(10px); /* 应用模糊效果 */
   width: 100%;
   z-index: 99;
 }

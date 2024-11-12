@@ -77,6 +77,28 @@ body {
   color: #86724a;
 }
 
+/* For all subtitle education project etc. */
+.subTitle {
+  /* display: flex; */
+  font-size: 3.5rem;
+  padding: 2%;
+}
+
+.subTitle-item-content {
+  text-align: left;
+  padding: 6%;
+  margin-top: 5%;
+  border: #86724a solid 1px;
+}
+
+.location {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+}
+
 @media screen and (max-width: 1600px) {
   body {
     padding-top: 100px;
@@ -87,13 +109,6 @@ body {
   body {
     padding-top: 80px;
   }
-}
-
-/* For all subtitle education project etc. */
-.subTitle {
-  /* display: flex; */
-  font-size: 3.5rem;
-  padding: 2%;
 }
 
 @media screen and (max-width: 800px) {

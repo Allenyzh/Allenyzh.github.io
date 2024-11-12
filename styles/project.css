@@ -10,6 +10,8 @@
   width: 90%;
 }
 
+
+
 @media screen and (max-width: 1700px) {
   .project-grid-container {
     grid-template-columns: repeat(3, 1fr);

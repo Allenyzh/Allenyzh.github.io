@@ -17,7 +17,8 @@ $(document).ready(function () {
 
   // 手机滚动事件监听
   $(window).scroll(function (event) {
-    if (event.originalEvent.deltaY !== 0 && $(window).width() <= 800) {
+    if (event.originalEvent.deltaY !== 0 && $(window).width() <= 800 && $(".nav-list").is(":visible")) {
+      console.log('scroll1');
       barColorWhite();
     }
   });
@@ -47,10 +48,10 @@ $(document).ready(function () {
     if ($(window).width() > 800) {
       $(".nav-list").show();
       $(".nav-list").css("display", "flex");
-      console.log('800');
+      // console.log($(".nav-list").is(":visible"));
     } else {
       $(".nav-list").hide();
-      console.log('<800');
+      // console.log($(".nav-list").is(":visible"));
     }
   });
 
@@ -80,7 +81,7 @@ function debounce(func, delay) {
 
 function toggleMenuColor() {
   if (!$(".nav-list").is(":visible") && $(window).width() <= 800)
-    console.log(!$(".nav-list").is(":visible"));
+    // console.log(!$(".nav-list").is(":visible"));
     $(".bar").css("background-color", "aliceblue");
 }
 

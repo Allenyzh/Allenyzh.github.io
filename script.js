@@ -22,7 +22,7 @@ $(document).ready(function () {
       $(window).width() <= 800 &&
       $(".nav-list").is(":visible")
     ) {
-      console.log("scroll1");
+      // console.log("scroll1");
       barColorWhite();
     }
   });

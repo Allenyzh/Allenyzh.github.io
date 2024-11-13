@@ -36,7 +36,7 @@ $(document).ready(function () {
 
   // 监听全页面的点击事件
   $(document).on("click", function (event) {
-    if (!$(event.target).closest("nav, #mobile-menu").length) {
+    if (!$(event.target).closest("nav, #mobile-menu").length && $(window).width() <= 800) {
       barColorWhite();
     }
   });

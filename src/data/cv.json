@@ -1,0 +1,52 @@
+{
+  "education": [
+    {
+      "degree": "Bachelor Degree in Mathematics and Statistics",
+      "institution": "Concordia University, Montreal, QC",
+      "period": "2023-present",
+      "details": [
+        "Coursework: Calculus, Linear Algebra, Probability & Statistics, Mathematical Modelling",
+        "Developed responsive websites using HTML, CSS, and JavaScript",
+        "Implemented front-end frameworks like React.js to improve performance and user experience",
+        "Utilized Express.js to design and deploy robust back-end architectures, enabling seamless communication between client and server ddddddddddddddddddddddddddddddddddd"
+      ]
+    },
+    {
+      "degree": "DVS in Computer Graphics",
+      "institution": "St Pius Business Center",
+      "period": "N/A",
+      "details": []
+    },
+    {
+      "degree": "DEP in Accounting",
+      "institution": "Shanghai Institute of Tourism",
+      "period": "N/A",
+      "details": []
+    }
+  ],
+  "experience": [
+    {
+      "position": "Graphic Designer",
+      "company": "Quebec Deaup",
+      "location": "Quebec, QC",
+      "period": "2021-2023",
+      "details": [
+        "Created custom visual content for print and digital media, including brochures, logos, and advertisements",
+        "Collaborated with clients to understand brand identity and deliver effective designs",
+        "Utilized Adobe Creative Suite tools like Photoshop, Illustrator, and InDesign to develop high-quality visual elements",
+        "Worked closely with the marketing team to design social media and web graphics"
+      ]
+    },
+    {
+      "position": "Account Payable / Cost Control",
+      "company": "Marriott (St Regis & Ritz Carlton)",
+      "location": "Shanghai, China",
+      "period": "2016-2018",
+      "details": [
+        "Processed and reconciled invoices, ensuring accurate financial records",
+        "Monitored inventory levels and controlled costs, contributing to efficient budgeting",
+        "Liaised with vendors and maintained strong relationships to support hotel operations"
+      ]
+    }
+  ]
+}
